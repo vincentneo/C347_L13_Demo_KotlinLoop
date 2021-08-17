@@ -15,5 +15,12 @@ class MainActivity : AppCompatActivity() {
                 Log.d("MainActivity", i.toString())
             }
         }
+        button2.setOnClickListener {
+            val word = editTextWord.text.toString()
+            for (character in word) {
+                Log.d("MainActivity", "$character")
+            }
+        }
     }
+
 }
